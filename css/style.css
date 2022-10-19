@@ -1,0 +1,379 @@
+/* 
+to connect fonts at the end of the code add: &display=swap 
+font should be connected after reset.css and before styles
+*/
+@import "reset.css";
+/* ========================================================================== */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+/* ========================================================================== */
+.location{
+	background-color: #01213c;
+	min-height: 100vh;
+}
+/* ===============================House===================================== */
+.construction-location__house {
+	background-color: #7e7876;
+	height: 400px;
+	width: 240px;
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+.construction-location__house::before{
+	content: "";
+	display: inline-block;
+	width: 260px;
+	height: 10px;
+	background-color: #a48346;
+	position: relative;
+	bottom: 10px;
+	right: 10px;
+}
+.construction-location__window{
+	height: 65px;
+	width: 50px;
+}
+.construction-location__window::after{
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 5px;
+	background-color: #a48346;
+	position: relative;
+	top: 56px;
+	right: 5px;
+}
+.construction-location__window--dark {
+background-color: #0a1409;
+}
+.construction-location__window--light {
+	background-color: #f2e0cb;
+}
+.construction-location__window--1{
+	position: relative;
+	top: 30px;
+	left: 15px;
+}
+.construction-location__window--2{
+	position: relative;
+	bottom: 35px;
+	left: 90px;
+}
+.construction-location__window--2::before{
+	content: "";
+	display: inline-block;
+	height: 20px;
+	width: 25px;
+	background: url(../img/icons/flowers.svg) 0 0 / contain no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 5px;
+}
+.construction-location__window--3{
+	position: relative;
+	bottom: 100px;
+	left: 170px;
+}
+.construction-location__window--4{
+	position: relative;
+	bottom: 80px;
+	left: 15px;
+}
+.construction-location__window--4::before{
+	content: "";
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	background: url(../img/icons/sw.svg) 0 0 / contain no-repeat;
+	position: absolute;
+	top: 10px;
+	left: 8px;
+}
+.construction-location__window--5{
+	position: relative;
+	bottom: 145px;
+	left: 90px;
+}
+.construction-location__window--6{
+	position: relative;
+	bottom: 210px;
+	left: 170px;
+}
+.construction-location__window--7{
+	position: relative;
+	bottom: 190px;
+	left: 15px;
+}
+.construction-location__window--8{
+	position: relative;
+	bottom: 255px;
+	left: 90px;
+}
+.construction-location__window--9{
+	position: relative;
+	bottom: 320px;
+	left: 170px;
+}
+.construction-location__window--9::before {
+	content: "";
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background: url(../img/icons/lamp-2.svg) 0 0 / contain no-repeat;
+	position: absolute;
+	top: 0;
+	left: 15px;
+}
+.construction-location__door{
+	height: 100px;
+	width: 75px;
+	background-color: #dd7c20;
+	position: absolute;
+	bottom: 5px;
+	left: 75px;
+}
+.construction-location__door::after{
+	content: "";
+	display: inline-block;
+	background-color: #2e1e1e;
+	width: 96px;
+	height: 15px;
+	position: absolute;
+	bottom: -5px;
+	left: -12px;
+}
+.construction-location__door::before{
+	content: "";
+	display: inline-block;
+	background-color: #2e1e1e;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+/* ===============================Lantern===================================== */
+.construction-location__lantern::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/icons/light.svg) 0 0 / contain no-repeat;
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	top:300px;
+	left: 350px;
+}
+.construction-location__lantern::after{
+	content: "";
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	background-color: #f2d057;
+	opacity: 0.3;
+	border-radius: 50%;
+	position: absolute;
+	top: 230px;
+	left: 350px;
+	box-shadow: 0px 0px 12px 8px rgba(242, 208, 87, 1), 0px 0px 25px 25px rgba(242, 208, 87, 0.7), 0px 20px 25px 25px rgba(242, 208, 87, 0.5), 0px 0px 25px 25px rgba(56, 89, 51, 0.2);
+}
+/* ===============================Road===================================== */
+.location__road {
+	background-color: #5d5b71;
+	height: 500px;
+	position: relative;
+	top: 100px;
+	left: 0;
+}
+.location__road::before,
+.location__road::after {
+	content: "";
+	display: block;
+	background-color: #cb9d43;
+	height: 10px;
+	width: 100%;
+}
+.location__road::before {
+	position: relative;
+	top: 250px;
+	left: 0;
+}
+.location__road::after {
+	position: relative;
+	top: 260px;
+	left: 0;
+}
+.location__road__line {
+	background-color: #cb9d43;
+	height: 15px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* ===============================Persons================================== */
+.location__chewbacca::before{
+	content: "WROARRR!!!";
+	display: inline-block;
+	height: 75px;
+	width: 150px;
+	background-color: #fff;
+	border: 3px solid #000;
+	position: absolute;
+	top: 250px;
+	right: 335px;
+	border-radius: 50%;
+	padding: 20px;
+	text-align: center;
+} 
+.location__chewbacca::after{
+	content: "";
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	background: url(../img/chewbacca.png) 0 0 / contain no-repeat;
+	position: absolute;
+	top: 310px;
+	right: 350px;
+}
+.location__solo::after{
+	content: "";
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	background: url(../img/solo.png) 0 0 / contain no-repeat;
+	position: absolute;
+	top: 380px;
+	right: 160px;
+}
+.location__solo::before {
+	content: "Chewie!";
+	display: inline-block;
+	height: 75px;
+	width: 150px;
+	background-color: #fff;
+	border: 3px solid #000;
+	position: absolute;
+	top: 330px;
+	right: 145px;
+	border-radius: 50%;
+	padding: 20px;
+	text-align: center;
+}
+/* ===============================Moon================================== */
+.location__circle--1{
+	width: 200px;
+	height: 200px;
+	background-color: #dad0af;
+	opacity: 0.8;
+	border-radius: 50%;
+	position: absolute;
+	top:10px;
+	left: 50%;
+	z-index: 2;
+	box-shadow: 0px 0px 3px 10px rgba(218, 208, 175, 1), 0px 0px 12px 14px rgba(218, 208, 175, 1), 0px 0px 20px 22px rgba(109, 25, 42, 1), 0px 0px 25px 25px rgba(218, 208, 175, 1);
+}
+.location__circle--2{
+	width: 200px;
+	height: 200px;
+	background-color: #01213c;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+}
+.location__circle--1::before,
+.location__circle--1::after,
+.location__circle--2::before,
+.location__circle--2::after {
+	content: "";
+	display: block;
+	border-radius: 50%;
+	background-color: #01213c;
+}
+.location__circle--1::before {
+	position: absolute;
+	top: 95px;
+	left: 90px;
+	width: 40px;
+	height: 40px;
+}
+.location__circle--1::after {
+	position: absolute;
+	top: 85px;
+	left: 65px;
+	width: 15px;
+	height: 15px;
+}
+.location__circle--2::before{
+	position: absolute;
+	top: 120px;
+	left: 30px;
+	width: 20px;
+	height: 20px;
+	z-index: 2;
+}
+.location__circle--2::after{
+	position: absolute;
+	bottom: 20px;
+	right: 50px;
+	width: 15px;
+	height: 15px;
+	z-index: 2;
+}
+/* ===============================Car================================== */
+.location__car{
+	position: relative;
+}
+.location__camaro::before {
+	content: "";
+	display: block;
+	height: 200px;
+	width: 400px;
+	background: url(../img/pngegg.png) 0 0 / contain no-repeat;
+	position: absolute;
+	top: -100px;
+	left: 35px;
+}
+.location__trailer::before {
+	content: "";
+	display: block;
+	height: 210px;
+	width: 400px;
+	background: url(../img/trailer.png) 0 0 / contain no-repeat;
+	position: absolute;
+	top: -100px;
+	left: 409px;
+	z-index: 1;
+}
+.location__jabba::before {
+	content: "";
+	display: block;
+	height: 200px;
+	width: 210px;
+	background: url(../img/jabba.png) 0 0 / contain no-repeat;
+	position: absolute;
+	top: -106px;
+	left: 465px;
+}
+.location__jabba::after{
+	content: "Boska!";
+	display: inline-block;
+	height: 75px;
+	width: 150px;
+	background-color: #fff;
+	border: 3px solid #000;
+	position: absolute;
+	bottom: 74px;
+	left: 447px;
+	border-radius: 50%;
+	padding: 20px;
+	text-align: center;
+}
